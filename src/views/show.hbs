@@ -135,11 +135,15 @@
                 <input type="text" name="phone" placeholder="Phone number*"  disabled value="{{user.phone}}"/>
                 <input type="number" name="experience" placeholder="Experience (in years)*"  disabled value="{{user.experience}}" />
             </div>
+            <p>Introduction</p>
+            <div>
+                <textarea name="achievements" rows="4" disabled>{{user.introduction}}</textarea>
+            </div>
             <p>Achievements</p>
             <div>
                 <textarea name="achievements" rows="4" disabled>{{user.achievements}}</textarea>
             </div>
-            <button type="submit">Submit</button>
+            
         </form>
     </div>
 

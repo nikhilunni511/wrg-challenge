@@ -32,6 +32,10 @@ module.exports = {
       achievements: {
         type: Sequelize.TEXT
       },
+      introduction: {
+        allowNull: false,
+        type: Sequelize.TEXT
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

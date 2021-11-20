@@ -22,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     phone: DataTypes.STRING,
     experience: DataTypes.INTEGER,
-    achievements: DataTypes.TEXT
+    achievements: DataTypes.TEXT,
+    introduction: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'User',

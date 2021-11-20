@@ -25,7 +25,7 @@ module.exports.validateRequest = Joi.object({
 		.min(3)
 		.max(30)
 		.required(),
-		phone: Joi.string()
+	phone: Joi.string()
 		.alphanum()
 		.min(10)
 		.max(20)
@@ -35,6 +35,11 @@ module.exports.validateRequest = Joi.object({
 		.min(0)
 		.max(250)
 		.allow(null, ''),
+
+	introduction: Joi.string()
+		.min(10)
+		.max(250)
+		.required(),
 
 	experience: Joi.number()
 		.required(),

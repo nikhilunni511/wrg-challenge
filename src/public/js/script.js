@@ -12,7 +12,8 @@ function submitForm(e) {
 		email: formData.get('email'),
 		phone: formData.get('phone'),
 		experience: formData.get('experience'),
-		achievements: formData.get('achievements')
+		achievements: formData.get('achievements'),
+		introduction: formData.get('introduction')
 	};
 
 	const http = new XMLHttpRequest();
