@@ -1,14 +1,11 @@
 /*
  * Author: Nikhil Unni <nikhi.unni@gmail.com>
- * Created Date: Tuesday October 5th 2021
+ * Created Date: Saturday November 20th 2021
  * Version : 1.0.0
- * Product : Records controller
+ * Product : User API controller
  */
 
 
-/**
- * Returns records from the database
-*/
 const { validateRequest } = require('../../utilities/validation');
 const { response } = require('../../utilities/response');
 const usersRepository = require('../../repositories/usersRepository')

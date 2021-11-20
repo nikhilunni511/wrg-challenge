@@ -1,17 +1,16 @@
 /*
  * Author: Nikhil Unni <nikhi.unni@gmail.com>
- * Created Date: Tuesday October 5th 2021
+ * Created Date: Saturday November 20th 2021
  * Version : 1.0.0
- * Product : Records controller
+ * Product : User Repository
  */
 
 const Users = require('../db').user;
 
 /**
  * Function to create customer in DB
- * @param {String} stripeCustomerId Stripe customer id
- * @param {Object} customerData Data to create customer Object
- * @returns {Object} new customer
+ * @param {Object} user Data to create user Object
+ * @returns {Object} new user
  */
 module.exports.createUser = async (user) => {
 	try {
@@ -24,7 +23,10 @@ module.exports.createUser = async (user) => {
 	}
 }
 
-
+/**
+ * Function to create customer in DB
+ * @returns {Array} all users
+ */
 module.exports.getUsers = async () => {
 	try {
 		return await Users.findAll({ attributes: ['id', 'firstName', 'lastName', 'email'], raw: true });
@@ -33,6 +35,11 @@ module.exports.getUsers = async () => {
 	}
 }
 
+/**
+ * Function to create customer in DB
+ * @param {number} id user id
+ * @returns {object} user object
+ */
 module.exports.getUser = async (id) => {
 	try {
 		return await Users.findByPk(id);

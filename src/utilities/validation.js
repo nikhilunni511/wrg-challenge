@@ -1,18 +1,12 @@
 /*
-* Author: Nikhil Unni <nikhi.unni@gmail.com>
-* Created Date: Tuesday November 2nd 2021
-* Version : 1.0.0
-* Product : Validations
-*/
+ * Author: Nikhil Unni <nikhi.unni@gmail.com>
+ * Created Date: Saturday November 20th 2021
+ * Version : 1.0.0
+ * Product : Validations
+ */
 
 const Joi = require("joi");
 
-/**
- * Validate request body
- * 
- * @param {object} reqBody request body to validate.
- * @return {boolean | object} return true if success else return an object with error statements
-*/
 module.exports.validateRequest = Joi.object({
 	firstName: Joi.string()
 		.alphanum()

@@ -1,9 +1,10 @@
 /*
-* Author: Nikhil Unni <nikhi.unni@gmail.com>
-* Created Date: Tuesday November 2nd 2021
-* Version : 1.0.0
-* Product : Server file
-*/
+ * Author: Nikhil Unni <nikhi.unni@gmail.com>
+ * Created Date: Saturday November 20th 2021
+ * Version : 1.0.0
+ * Product : Server file
+ */
+
 require('dotenv').config()
 const express = require('express');
 const cookieParser = require('cookie-parser');
