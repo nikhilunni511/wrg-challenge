@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+	<!-- <meta> tags> -->
+	<title>Users</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+	<script src="/js/script.js"></script>
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div style="text-decoration: none; font-size: 20px">
+		<a href="/users/create">New User</a>
+	</div>
+	{{#if error}}
+	<div style="margin: auto;">
+		<p style="font-size: 30px; text-align:center">No data</p>
+	</div>
+	{{else}}
+	{{#if user}}
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>View</th>
+			</tr>
+
+		</thead>
+
+		<tbody id="table-body">
+			{{#each user}}
+			<tr>
+				<td>{{this.firstName}} {{this.lastName}}</td>
+				<td>{{this.email}}</td>
+				<td><a href="/users/{{this.id}}">Click here</a></td>
+			</tr>
+			{{/each}}
+		</tbody>
+
+	</table>
+	{{/if}}
+	{{/if}}
+</body>
+
+</html>
