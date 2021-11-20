@@ -24,12 +24,12 @@ cd wrg-challenge
 Create a .env file with the following content and add required details to it.
 
 ```sh
-DB_NAME='wrg'
-DB_USER='root'
-DB_PASSWORD='admin'
-DB_DIALECT='mysql'
-DB_HOST='localhost'
-DB_PORT=3306
+DB_NAME=''
+DB_USER=''
+DB_PASSWORD=''
+DB_DIALECT=''
+DB_HOST=''
+DB_PORT=
 ```
 
 Install the dependencies.
